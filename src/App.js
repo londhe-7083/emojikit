@@ -31,6 +31,12 @@ useEffect(()=>{
   }
   },[scoreA,scoreB])
 
+  function resetScore(){
+    setScoreA(0);
+    setScoreB(0);
+    localStorage.clear();
+  }
+
   
   return (
     <>
@@ -61,7 +67,9 @@ useEffect(()=>{
 
             </div>
 
-           
+           <div>
+            <button className="reset-button" onClick={resetScore}> Reset  </button>
+           </div>
     </div>
     </>
 
