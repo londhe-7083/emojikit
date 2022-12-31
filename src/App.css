@@ -16,11 +16,10 @@
 }
 
 .main-emoji-container{
-  background-color: white;
-  height: 300px;
-  width: 250px;
+  height: 250px;
+  width: 200px;
   display: block;
-  margin-left: auto;
+  margin-left: 150px;
   margin-right: auto;
   margin-top: 80px;
   border-radius: 20px;

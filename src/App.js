@@ -10,20 +10,30 @@ function App() {
         <h3 className='app-title'>😍emoji-kit</h3>
       </div>
 
-      <div className='main-emoji-container'>
+
+      <div className='emoji-editor-container'>
+        <div>
+        <div className='main-emoji-container'>
         <div className='emoji'>
           {emoji}
         </div>
       </div>
+        </div>
+        
 
       <div className='emoji-container'>
         <div className='emoji-item' onClick={()=>{setEmoji('🍕')}}>🍕</div>
-        <div className='emoji-item' onClick={()=>{setEmoji('🍕')}}>✌️</div>
-        <div className='emoji-item' onClick={()=>{setEmoji('🍕')}}>💕</div>
-        <div className='emoji-item' onClick={()=>{setEmoji('🍕')}}>🙂</div>
-        <div className='emoji-item' onClick={()=>{setEmoji('🍕')}}>😄</div>
+        <div className='emoji-item' onClick={()=>{setEmoji('✌️')}}>✌️</div>
+        <div className='emoji-item' onClick={()=>{setEmoji('💕')}}>💕</div>
+        <div className='emoji-item' onClick={()=>{setEmoji('🙂')}}>🙂</div>
+        <div className='emoji-item' onClick={()=>{setEmoji('😄')}}>😄</div>
       </div>
     </div>
+    
+        <div>
+          <h1>Editing</h1>
+        </div>
+      </div>
   )
 }
 
