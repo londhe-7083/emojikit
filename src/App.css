@@ -1,56 +1,58 @@
-.score-keeper-container{
-  background: linear-gradient(to bottom left, #ffff66 0%, #ff9933 100%);
-  min-height: 100vh;
+.app-title-container{
+  background-color: white;
+  width: 60%;
+  display: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   padding: 10px;
+  border-radius: 8px;
+  border: 3px double  black;
 }
 
-.img-basket{
+.app-title{
+  text-align: center;
+  margin: 0;
+}
+
+.main-emoji-container{
+  background-color: white;
+  height: 300px;
+  width: 250px;
   display: block;
-  margin: auto;
-  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-.score-keeper-heading{
-  margin-left: 85vh;
-  margin-top: -2px;
- }
- 
- .score-card-container{
-   display: flex;
-   justify-content: space-around;
- }
- 
- .score-card{
-   background-color:white;
-   min-width: 300px;
-   min-height: 350px;
-   border-radius: 15px;
-   padding: 10px;
-   border: 5px double black;
- }
- 
- .score-card-heading {
-   margin: 0;
-   text-align: center;
-   font-size: 40px;
- }
- .score-card-count {
-   margin: 0;
-   text-align: center;
-   font-size: 80px;
- }
- 
- .button-container{
-   display: flex;
-   justify-content: space-around;
- }
- 
- .score-button{
-   font-size: 60px;
-   border-radius: 50%;
-   height: 80px;
-   width: 80px;
-   margin-top: 50px;
- }
- 
- 
+.emoji{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 150px;
+}
+
+.emoji-container{
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 70px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.emoji-item{
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+
+}
+
+.emoji-item:hover{
+  transform: scale(1.8);
+}
