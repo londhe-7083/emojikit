@@ -1,7 +1,6 @@
 .app-title-container{
   background-color: white;
   width: 60%;
-  display: black;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -19,9 +18,8 @@
   height: 250px;
   width: 200px;
   display: block;
-  margin-left: 150px;
+  margin-left: 220px;
   margin-right: auto;
-  margin-top: 80px;
   border-radius: 20px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 }
@@ -31,7 +29,6 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  font-size: 150px;
 }
 
 .emoji-container{
@@ -39,10 +36,20 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 70px;
-  width: 50%;
-  margin-left: auto;
+  width: 100%;
+  margin-left: 100px;
   margin-right: auto;
   border-radius: 10px;
+}
+
+.emoji-first-view{
+  display: flex;
+  margin-top: 80px;
+}
+
+.emoji-second-view{
+  margin-left:20%;
+
 }
 
 .emoji-item{
@@ -54,4 +61,60 @@
 
 .emoji-item:hover{
   transform: scale(1.8);
+}
+
+.colors-container{
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vh;
+  border-radius: 10px;
+}
+
+.color-item{
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 10vw;
+  height: 50px;
+  margin: 20px;
+}
+
+.color-item:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.bg-red{
+  background-color: red;
+}
+
+.bg-purple{
+  background-color: purple;
+}
+
+.bg-pink{
+  background-color: pink;
+}
+
+.bg-yellow{
+  background-color: yellow;
+}
+
+.bg-black{
+  background-color: blueviolet;
+}
+
+.size-container{
+  background-color: white;
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-left: 17px;
+
+}
+
+.size-slider{
+  width: 100%;
+  margin: 10px;
 }
