@@ -18,7 +18,7 @@ function App() {
 
         <div className='emoji-editor-container' >
           <div>
-            <div className='main-emoji-container' style={{ backgroundColor: emojiColor,transform:`rotate(20)` }}>
+            <div className='main-emoji-container' style={{ backgroundColor: emojiColor,transform:`rotate(${emojiDeg*3.6}deg)` }}>
               <div className='emoji' style={{ fontSize:`${emojiSize*2}px`}}>
                 {emoji}
               </div>
@@ -45,12 +45,12 @@ function App() {
           </div>
           <div className='size-container'>
             <input type="range" className='size-slider' onChange={(e) => { setEmojiSize(e.target.value)}}/>
-            
-            
-            <input type="range" className='size-slider' onChange={(e) => { setEmojiDeg(e.target.value)
-            }} />
+            </div>
 
-          </div>
+            
+          <div className='size-container'>
+            <input type="range" className='size-slider' onChange={(e) => { setEmojiDeg(e.target.value)}} />
+        </div>
         </div>
       </div>
     </div>
