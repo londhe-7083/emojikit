@@ -5,7 +5,8 @@ function App() {
 
   const [emoji, setEmoji] = useState("🏆")
   const [emojiColor, setEmojiColor] = useState("white")
-  const [emojiSize, setEmojiSize] = useState(100)
+  const [emojiSize, setEmojiSize] = useState(100);
+  const [emojiDeg, setEmojiDeg] = useState(0);
 
   return (
     <div className='container'>
@@ -17,8 +18,8 @@ function App() {
 
         <div className='emoji-editor-container' >
           <div>
-            <div className='main-emoji-container' style={{ backgroundColor: "emojiColor" }}>
-              <div className='emoji' style={{ fontSize: '${emojiSize}px' }}>
+            <div className='main-emoji-container' style={{ backgroundColor: emojiColor,transform:`rotate(20)` }}>
+              <div className='emoji' style={{ fontSize:`${emojiSize*2}px`}}>
                 {emoji}
               </div>
             </div>
@@ -43,7 +44,12 @@ function App() {
             <div className='color-item bg-black' onClick={() => { setEmojiColor("black") }}></div>
           </div>
           <div className='size-container'>
-            <input type="range" className='size-slider' onChange={(e) => { setEmojiSize(e.target.value) }} />
+            <input type="range" className='size-slider' onChange={(e) => { setEmojiSize(e.target.value)}}/>
+            
+            
+            <input type="range" className='size-slider' onChange={(e) => { setEmojiDeg(e.target.value)
+            }} />
+
           </div>
         </div>
       </div>
