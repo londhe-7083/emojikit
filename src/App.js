@@ -18,7 +18,8 @@ function App() {
 
         <div className='emoji-editor-container' >
           <div>
-            <div className='main-emoji-container' style={{ backgroundColor: emojiColor,transform:`rotate(${emojiDeg*3.6}deg)` }}>
+            <div className='main-emoji-container' style={{ backgroundColor: emojiColor,transform:`rotate(${emojiDeg*3.6}deg 
+              )` }}>
               <div className='emoji' style={{ fontSize:`${emojiSize*2}px`}}>
                 {emoji}
               </div>
